@@ -130,7 +130,7 @@
       "scenes": [
         {
           "type": "ending",
-          "title": "I love you!",
+          "title": "I love you {{girlfriendName}}!",
           "message": "Thanks for playing our little story, {{girlfriendName}}.\n\nYou are my favorite plot twist, my best friend, and the person I want beside me for every next chapter.\n\nHappy monthsary. ♡"
         }
       ]

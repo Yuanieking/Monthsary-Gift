@@ -487,13 +487,39 @@
     elements.progress.setAttribute("aria-valuenow", "100");
     elements.chapter.textContent = personalize(story.settings.endingTitle || "The End (but not really)");
     elements.content.className = "scene-content ending-content";
+    const bouquet = document.createElement("div");
+    bouquet.className = "ending-bouquet";
+    bouquet.setAttribute("aria-hidden", "true");
+    ["flower--rose", "flower--peach", "flower--lilac"].forEach((flowerStyle) => {
+      const flower = document.createElement("div");
+      flower.className = `flower ${flowerStyle}`;
+      const head = document.createElement("span");
+      head.className = "flower-head";
+      for (let petalIndex = 0; petalIndex < 6; petalIndex += 1) {
+        const petal = document.createElement("span");
+        petal.className = "flower-petal";
+        petal.style.setProperty("--petal-index", String(petalIndex));
+        head.append(petal);
+      }
+      const center = document.createElement("span");
+      center.className = "flower-center";
+      head.append(center);
+      const stem = document.createElement("span");
+      stem.className = "flower-stem";
+      const leftLeaf = document.createElement("span");
+      leftLeaf.className = "flower-leaf flower-leaf--left";
+      const rightLeaf = document.createElement("span");
+      rightLeaf.className = "flower-leaf flower-leaf--right";
+      flower.append(head, stem, leftLeaf, rightLeaf);
+      bouquet.append(flower);
+    });
     const heart = document.createElement("div");
     heart.className = "ending-heart";
     heart.setAttribute("aria-hidden", "true");
     heart.textContent = "♥";
     const kicker = document.createElement("p");
     kicker.className = "scene-kicker";
-    kicker.textContent = personalize(story.settings.endingKicker || "You unlocked: my whole heart");
+    kicker.textContent = personalize(story.settings.endingKicker || "Virtual flowers for u bb hehe");
     const title = document.createElement("h1");
     title.className = "scene-heading";
     title.textContent = personalize(scene.title);
@@ -501,7 +527,7 @@
     message.className = "ending-message";
     message.textContent = personalize(scene.message);
     const replay = makeButton(story.settings.buttonLabels?.replay || "Play our story again ↺", "btn btn-love", restartGame);
-    elements.content.append(heart, kicker, title, message, replay);
+    elements.content.append(bouquet, heart, kicker, title, message, replay);
   }
 
   function makeContinueButton() {
