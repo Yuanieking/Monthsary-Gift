@@ -1,0 +1,139 @@
+{
+  "settings": {
+    "websiteTitle": "Our Little Story",
+    "openingSubtitle": "Just a quick trip down memory lane, mwamwa",
+    "girlfriendName": "Babi",
+    "boyfriendName": "Your boyrfriend",
+    "monthsaryDate": "Happy monthsary, {{girlfriendName}}! Make sure you play the music para chuy ba hehe",
+    "typingSpeed": 32,
+    "showMusicButton": true,
+    "musicFile": "assets/audio/Lyn Lapid - Little Island (Official Lyric Video).mp3",
+    "endingTitle": "The End (but not really)",
+    "endingKicker": "You unlocked: my whole heart",
+    "buttonLabels": {
+      "start": "Start Our Story",
+      "next": "Next →",
+      "continue": "Continue →",
+      "replay": "Play our story again ↺",
+      "musicPlay": "♫ Play music",
+      "musicPause": "♫ Pause music"
+    }
+  },
+  "chapters": [
+    {
+      "id": "the-beginning",
+      "title": "Chapter 1 · The Beginning",
+      "scenes": [
+        {
+          "type": "dialogue",
+          "speaker": "{{boyfriendName}}",
+          "title": "First of all, I'm sorry...",
+          "text": "Hi love, Im sorry na po. I made this in a desperate attempt to stop our quarrel. I hope you like it, and I hope it'll help na mag bati na tayo."
+        },
+        {
+          "type": "dialogue",
+          "speaker": "{{boyfriendName}}",
+          "title": "A quick question",
+          "text": "Do you know what day it is? hehe. It's our monthsary, 2 years and 10 months with you, though I know we've changed, maybe not the way we expected but we're still building together **Happy monthsary, my love!**"
+        },
+        {
+          "type": "choices",
+          "speaker": "{{boyfriendName}}",
+          "title": "First quest: be honest",
+          "question": "How excited are you to play this extremely high-budget game?",
+          "options": [
+            {
+              "label": "So excited! Where's my tiny crown?",
+              "response": "Excellent choice. Your tiny crown is invisible, but spiritually very sparkly."
+            },
+            {
+              "label": "Give me food first.",
+              "response": "Error. The food budget was tragically spent on imaginary confetti. I owe you snacks (talk to me first oi hehehe)"
+            },
+            {
+              "label": "Hmmmm, impress me first.",
+              "response": "Challenge accepted. I have prepared one (1) heart, several silly jokes, and unlimited affection."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "little-memories",
+      "title": "Chapter 2 · Our Little Memories",
+      "scenes": [
+        {
+          "type": "dialogue",
+          "speaker": "{{boyfriendName}}",
+          "title": "The good stuff",
+          "text": "The best parts of my days are the little moments with you. Here's a mini scrapbook of some of my favorite memories together. I hope they make you smile, and I hope we can make many more."
+        },
+        {
+          "type": "gallery",
+          "title": "Memory lane",
+          "intro": "Tap a card to open its note. I hope you like it, babi.",
+          "memories": [
+            {
+              "title": "The beginning(not quite but still)",
+              "image": "assets/images/first.png",
+              "message": "After ko nag confess huhu bday dyon ni edessah, pero padayon kay batak man ko hehe"
+            },
+            {
+              "title": "A favorite day",
+              "image": "assets/images/cdo.jpg",
+              "alt": "Abstract heart illustration placeholder, not a real couple photo",
+              "message": "Travel with the family to CDO, then we slept together in the hotel. We cuddled and wraped each other in the blanket and didnt want to let go. I love you so much, babi."
+            },
+            {
+              "title": "Our silly moment",
+              "image": "assets/images/sleep.jpg",
+              "alt": "Abstract heart illustration placeholder, not a real couple photo",
+              "message": "I always like taking pictures of you sleeping hehehe, and I love how you always look so peaceful and cute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-quest",
+      "title": "Chapter 3 · A Very Scientific Side Quest",
+      "scenes": [
+        {
+          "type": "meter",
+          "title": "The love-o-meter",
+          "description": "This is a completely unserious, deeply biased measurement of how adorable you are.",
+          "buttonLabel": "Send one more smooch 💋"
+        },
+        {
+          "type": "surprise",
+          "title": "One more thing, baby",
+          "buttonLabel": "Open your surprise",
+          "message": "{{girlfriendName}}, your surprise is a reminder: Even if we have our disagreements, our big fights, tiny quarels and everything in between, I will always love you. Together or apart, I will always be your cutie baby. I will always be your boyfriend, and I will always be here for you. I love you, {{girlfriendName}}."
+        }
+      ]
+    },
+    {
+      "id": "from-my-heart",
+      "title": "Chapter 4 · A Message From My Heart",
+      "scenes": [
+        {
+          "type": "dialogue",
+          "speaker": "{{boyfriendName}}",
+          "title": "Just us",
+          "text": "I hope you know how much I appreciate you, for the things you have done for me, for us, for our relationship to work even if it's not perfect, if the pain was too much, you still chose to stay. \n\n I'm sorry baby, I've seen your repost and notes about how you feel, I'm sorry for being such a bad person love, I know you're tired of hearing this over and over and over again, I love you. You know baby, If ayaw mo na talaga you can tell me after this, I promise what ever you decide I'll respect it(sana hindi mag  bulag). \n\nThank you for being my favorite person to laugh with, talk to, and do absolutely nothing with. I love getting to know every version of you, and I’m grateful for every month we get to call this *our story*.\n\nHappy monthsary, baby. I love you, today, tomorrow, and on all the days in between. To more memories, more laughter, and more love. I love you, {{girlfriendName}}. (no bulag please huhu)"
+        }
+      ]
+    },
+    {
+      "id": "final-surprise",
+      "title": "Chapter 5 · The Final Surprise",
+      "scenes": [
+        {
+          "type": "ending",
+          "title": "I love you!",
+          "message": "Thanks for playing our little story, {{girlfriendName}}.\n\nYou are my favorite plot twist, my best friend, and the person I want beside me for every next chapter.\n\nHappy monthsary. ♡"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff7f2" />
+    <meta
+      name="description"
+      content="A tiny, interactive love story made just for you."
+    />
+    <title>Our Little Story</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/game.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <main class="container game-shell">
+      <section
+        id="loading-screen"
+        class="screen-card status-screen"
+        aria-live="polite"
+      >
+        <span class="tiny-heart" aria-hidden="true">♥</span>
+        <p>Warming up the love story...</p>
+      </section>
+
+      <section id="error-screen" class="screen-card status-screen" hidden>
+        <span class="tiny-heart" aria-hidden="true">♡</span>
+        <h1>Oops, the story got lost.</h1>
+        <p id="error-message">
+          Check that the project is being served over HTTP and that
+          data/story.json exists.
+        </p>
+        <button id="retry-button" class="btn btn-love">Try again</button>
+      </section>
+
+      <section id="opening-screen" class="screen-card opening-screen" hidden>
+        <div class="opening-art" aria-hidden="true">
+          <span class="orbit orbit-a">♡</span
+          ><span class="orbit orbit-b">✦</span>
+          <div class="heart-stack">
+            <span>♥</span><span>♥</span><span>♥</span>
+          </div>
+          <span class="orbit orbit-c">✿</span>
+        </div>
+        <p class="eyebrow">A little game para bati na tayo huhu</p>
+        <h1 id="opening-title">Our Little Story</h1>
+        <p id="opening-subtitle" class="opening-subtitle"></p>
+        <p id="monthsary-date" class="date-note"></p>
+        <button id="start-button" class="btn btn-love btn-lg">
+          Start Our Story <span aria-hidden="true">→</span>
+        </button>
+        <p class="opening-footnote">
+          Play it when you are ready to talk na babi.
+        </p>
+      </section>
+
+      <section id="game-screen" class="game-screen" hidden>
+        <header class="game-topbar">
+          <a class="brand-mark" href="#" aria-label="Our Little Story home"
+            >♡ <span>OUR LITTLE STORY</span></a
+          >
+          <div class="top-actions">
+            <button
+              id="music-button"
+              class="btn btn-soft btn-sm"
+              type="button"
+              hidden
+            ></button>
+            <button
+              id="mute-button"
+              class="btn btn-soft btn-sm"
+              type="button"
+              hidden
+            >
+              Mute
+            </button>
+            <span id="music-note" class="music-note" hidden></span>
+            <button
+              id="restart-button"
+              class="btn btn-soft btn-sm"
+              type="button"
+            >
+              Restart
+            </button>
+          </div>
+        </header>
+
+        <div class="progress-wrap">
+          <div class="progress-caption">
+            <span id="chapter-label">Chapter</span>
+            <span id="progress-label">Our story</span>
+          </div>
+          <div
+            class="progress story-progress"
+            role="progressbar"
+            aria-label="Story progress"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <article id="scene-card" class="scene-card" aria-live="polite">
+          <div class="scene-decoration" aria-hidden="true">
+            <span>✦</span><span>♡</span><span>✦</span>
+          </div>
+          <div id="scene-content" class="scene-content"></div>
+        </article>
+        <p class="game-hint">
+          <span aria-hidden="true">✧</span> Tap the dialogue to reveal it faster
+        </p>
+      </section>
+
+      <footer class="page-footer">
+        Made with all my heart <span aria-hidden="true">♥</span>
+      </footer>
+    </main>
+
+    <dialog
+      id="memory-dialog"
+      class="memory-dialog"
+      aria-labelledby="memory-title"
+    >
+      <button
+        id="close-memory"
+        class="dialog-close"
+        type="button"
+        aria-label="Close memory"
+      >
+        ×
+      </button>
+      <img
+        id="memory-image"
+        src="assets/images/memory-placeholder.svg"
+        alt=""
+      />
+      <p class="eyebrow">A little memory</p>
+      <h2 id="memory-title"></h2>
+      <p id="memory-message"></p>
+    </dialog>
+    <audio id="background-audio" loop preload="none"></audio>
+  </body>
+</html>
