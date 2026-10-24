@@ -3,7 +3,7 @@
     "websiteTitle": "Our Little Story",
     "openingSubtitle": "Just a quick trip down memory lane, mwamwa",
     "girlfriendName": "Babi",
-    "boyfriendName": "Your boyrfriend",
+    "boyfriendName": "Your boyfriend",
     "monthsaryDate": "Happy monthsary, {{girlfriendName}}! Make sure you play the music para chuy ba hehe",
     "typingSpeed": 32,
     "showMusicButton": true,
@@ -40,19 +40,19 @@
           "type": "choices",
           "speaker": "{{boyfriendName}}",
           "title": "First quest: be honest",
-          "question": "How excited are you to play this extremely high-budget game?",
+          "question": "How excited are you to play this extremely high budget game?",
           "options": [
             {
-              "label": "So excited! Where's my tiny crown?",
-              "response": "Excellent choice. Your tiny crown is invisible, but spiritually very sparkly."
+              "label": "So excited! Still mad though hmp.",
+              "response": "I'm sorry na babi, I know you're mad at me. I hope this game will help us talk and work things out. I love you, {{girlfriendName}}."
             },
             {
               "label": "Give me food first.",
               "response": "Error. The food budget was tragically spent on imaginary confetti. I owe you snacks (talk to me first oi hehehe)"
             },
             {
-              "label": "Hmmmm, impress me first.",
-              "response": "Challenge accepted. I have prepared one (1) heart, several silly jokes, and unlimited affection."
+              "label": "Dili kay I'm mad at you.",
+              "response": "I know love, and I'm sorry, I really put effort into this game to make you smile. I hope it works, and I hope we can talk about our feelings after."
             }
           ]
         }
